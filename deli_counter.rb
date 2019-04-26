@@ -4,11 +4,9 @@ def line(line)
   if line.length==0
     puts "The line is currently empty."
   else
-    printLine = ["The line is currently:"]
-    printString = ""
-    line.each_with_index do |n,p| printLine.push(" #{p+1}. #{n}")
+    printString = "The line is currently:"
+    line.each_with_index do |n,pos| printString<<" #{pos+1}. #{n}"
     end
-    printLine.each do |txt| printString << "#{txt}" end
     puts printString
   end
 end
