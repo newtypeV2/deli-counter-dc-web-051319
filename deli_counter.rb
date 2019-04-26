@@ -5,7 +5,7 @@ def line(line)
     puts "The line is currently empty."
   else
     printString = "The line is currently:"
-    line.each_with_index do |n,pos| printString<<" #{pos+1}. #{n}")
+    line.each_with_index do |n,pos| printString<<" #{pos+1}. #{n}"
     end
     puts printString
   end
